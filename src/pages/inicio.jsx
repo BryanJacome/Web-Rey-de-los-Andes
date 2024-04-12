@@ -1,11 +1,10 @@
 import Spline from "@splinetool/react-spline";
-import heladero from "../images/Heladero.png"
 
 export default function Inicio() {
     return (
         <div className="bg-gradient-to-tr from-pikfe7 to-geern80e p-2">
-            <div className="dark:bg-[black]/60 flex flex-col mdx:flex-row  md:justify-start p-5 items-center content-center h-screen 
-            bg-[white]/60 rounded-lg">
+            <div className="bg-[white]/60 dark:bg-[black]/60 flex flex-col mdx:flex-row  md:justify-start p-5 items-center content-center h-screen 
+             rounded-lg">
                 <article className="flex flex-col justify-center text-center h-full mt-32 mdx:mt-0">
                     <h3 className="text-4xl md:text-6xl text-[black]/80 dark:text-[white] font-noto font-bold cursor-default text-shadow-white">Helados</h3>
                     <p className="text-6xl md:text-8xl text-[black]/80 dark:text-[white]  font-noto font-bold cursor-default">Rey de los Andes</p>

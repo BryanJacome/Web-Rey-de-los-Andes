@@ -19,7 +19,7 @@ export default function MenuBar() {
           onPress={handleOpen}
         ><BurgerIcon /></Button>
       </div>
-      <Modal backdrop="blur" isOpen={isOpen} onClose={onClose} placement="top-center" size="xs" hideCloseButton>
+      <Modal backdrop="blur" isOpen={isOpen} onClose={onClose} placement="top-center" size="xs" hideCloseButton className="mt-[100px]">
         <ModalContent>
           {(onClose) => (
             <ModalBody>

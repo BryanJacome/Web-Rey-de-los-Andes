@@ -17,7 +17,7 @@ export default function NavBar() {
     };
 
     return (
-        <div className={`w-full p-5 rounded-lg h-20 flex items-center justify-between fixed ${isScrolled ?
+        <div className={`w-full p-5 rounded-lg h-20 flex items-center justify-between fixed z-[100] ${isScrolled ?
             'm-4  ease-in duration-500 bg-[white]/80 dark:bg-[black]/80'
             : 'mt-2  fixed ease-out duration-200 bg-transparent'}`}
             style={{ width: isScrolled ? "calc(100% - 33px)" : "100%" }}
@@ -27,7 +27,7 @@ export default function NavBar() {
             <ul className='hidden md:flex list-none text-center'>
                 <li className='cursor-pointer mr-5 text-base hover:text-sky008' onClick={() => handleSection('')} >Inicio</li>
                 <li className='cursor-pointer mr-5 text-base hover:text-sky008' onClick={() => handleSection('Nosotros')} >Nosotros</li>
-                <li className='cursor-pointer mr-5 text-base hover:text-sky008' onClick={() => handleSection('Producto')}>Productos</li>
+                <li className='cursor-pointer mr-5 text-base hover:text-sky008' onClick={() => handleSection('Productos')}>Productos</li>
                 <li className='cursor-pointer mr-5 text-base hover:text-sky008' onClick={() => handleSection('Contacto')}>Contactanos</li>
             </ul>
             <div className='order-last'><ThemeSwitcher /></div>
